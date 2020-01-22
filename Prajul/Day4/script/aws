@@ -1,0 +1,14 @@
+#!/bin/bash
+declare -a array
+for (( c=1; c<=3; c++ ))
+  do
+   id=$(aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId]' --filters "Name=tag-value,Values=$c" --output text)
+   array[$c]=$id
+   echo ${array[$c]}
+   aws ec2 stop-instances --instance-ids $id
+  done
+sleep 2m
+for (( c=1; c<=3; c++))
+  do
+   aws ec2 start-instances --instance-ids ${array[$c]}
+  done

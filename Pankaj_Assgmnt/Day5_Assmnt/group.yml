@@ -1,0 +1,19 @@
+---
+  - hosts: localhost
+    connection: local
+    become: yes
+    gather_facts: false
+    tasks:  
+      - name: security group
+        ec2_group:
+          name: ansble_grp
+          description: Security group for ssh
+          region: us-east-1
+          aws_secret_key: my_secret_key
+          aws_access_key: my_access_key
+          rules:
+            - proto: tcp
+              from_port: 22
+              to_port: 22
+              cidr_ip: 0.0.0.0/0
+          state: present

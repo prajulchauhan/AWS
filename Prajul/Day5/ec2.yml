@@ -1,0 +1,34 @@
+---
+  - hosts: localhost
+    become: true
+    tasks:  
+      - name: security_group
+        ec2_group:
+          name: test
+          vpc_id: vpc-60c5591a
+          region: us-east-1
+          aws_secret_key: 
+          aws_access_key:
+          rules:
+            - proto: tcp
+              from_port: 80
+              to_port: 80
+              cidr_ip: 0.0.0.0/0
+            - proto: tcp
+              from_port: 22
+              to_port: 22
+              cidr_ip: 0.0.0.0/0
+            - proto: tcp
+              from_port: 443
+              to_port: 443
+      - name: create instance
+        ec2: 
+          instance_type: t2.micro
+          image: ami-04b9e92b5572fa0d1
+          group: test
+          count: 1
+          vpc_subnet_id: subnet-030a300c
+          assign_public_ip: yes       
+          region: us-east-1
+          aws_access_key: ****
+          aws_secret_key: ****

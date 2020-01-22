@@ -1,0 +1,7 @@
+---
+ - name: Create and Update Index Page
+   hosts: all
+   roles:
+    - role: nginxIndex
+      become: yes
+      become_user: root

@@ -1,0 +1,12 @@
+---
+  - hosts: localhost
+    connection: local
+    become: yes
+    gather_facts: false
+    tasks: 
+      - name: Ec2 Key pair 
+        ec2_key:
+            name: my_keypair
+            region: us-east-2
+            aws_secret_key: ****
+            aws_access_key: *****

@@ -1,0 +1,19 @@
+---
+  - hosts: localhost
+    connection: local
+    become: yes
+    gather_facts: false
+    tasks:  
+      - name: create instance
+        ec2:
+          key_name: Test_keypair
+          instance_type: t2.micro
+          image: ami-04b9e92b5572fa0d1
+          wait: yes
+          region: us-east-1
+          group: ansble_grp
+          instance_tags:
+            Name: 'MyTest'
+          count: 1
+          aws_secret_key: my_secret_key
+          aws_access_key: my_access_key

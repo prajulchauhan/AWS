@@ -1,0 +1,40 @@
+---
+  - hosts: localhost
+    connection: local
+    become: yes
+    gather_facts: false
+    tasks:  
+      - name: security group
+        ec2_group:
+          name: example
+          description: example of ec2 group
+          vpc_id: vpc-0b59e09043de9b8eb
+          region: us-east-2
+          aws_secret_key: ****
+          aws_access_key: *****
+          rules:
+            - proto: tcp
+              from_port: 80
+              to_port: 80
+              cidr_ip: 0.0.0.0/0
+            - proto: tcp
+              from_port: 22
+              to_port: 22
+              cidr_ip: 0.0.0.0/0
+            - proto: tcp
+              from_port: 443
+              to_port: 443
+      - name: create instance
+        ec2: 
+          instance_type: t2.micro
+          image: ami-0d5d9d301c853a04a
+          wait: yes
+          group: example
+          count: 1
+          vpc_subnet_id: subnet-038bd9b45a3d0acbc
+          assign_public_ip: yes       
+          region: us-east-2
+          aws_secret_key: ****
+          aws_access_key: *****
+  
+  

@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: create key pair using ansible
+      ec2_key:
+        name: test.pem
+        region: us-east-1
+        aws_access_key: ****
+        aws_secret_key: ****
