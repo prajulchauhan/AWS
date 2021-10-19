@@ -23,4 +23,4 @@ PS: Create a Bastion Host in Public Subnet
 aws ec2 create-vpc --cidr-block 10.0.0.0/26
 ```
 
-![Screenshots\image](1.png)
+![image](1.png)
