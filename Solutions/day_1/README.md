@@ -1,4 +1,4 @@
-# AWS Assignment Day-1
+# AWS Assignment Day-1 Solution
 
 ### Task 1
 
