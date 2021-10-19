@@ -112,5 +112,121 @@ aws ec2 create-tags --resources subnet-06aa7f597b99617a3 --tags Key=Name,Value=C
 ![Screenshots](Screenshots/13.png)
 
 
-9.
+9. Create Internet Gateway
+
+```
+aws ec2 create-internet-gateway
+```
+
+![Screenshots](Screenshots/14.png)
+
+
+10. Tagging Internet Gateway
+
+```
+aws ec2 create-tags --resources igw-02a74163f618830be --tags Key=Name,Value=CLI-IG
+```
+
+![Screenshots](Screenshots/15.png)
+
+#### Output
+
+![Screenshots](Screenshots/16.png)
+
+
+11. Attach Internet Gateway
+
+```
+aws ec2 attach-internet-gateway --internet-gateway-id igw-02a74163f618830be --vpc-id vpc-0186ea191f2032447
+```
+
+![Screenshots](Screenshots/17.png)
+
+#### Output
+
+![Screenshots](Screenshots/18.png)
+
+
+12. Allocate Elastic IP
+
+```
+aws ec2 allocate-address --domain vpc
+```
+
+![Screenshots](Screenshots/19.png)
+
+#### Output
+
+![Screenshots](Screenshots/20.png)
+
+
+13. Tagging Elastic IP
+
+```
+aws ec2 create-tags --resources eipalloc-0b51fe4a278417bb0 --tags Key=Name,Value=CLI-EIP
+```
+
+![Screenshots](Screenshots/21.png)
+
+#### Output
+
+![Screenshots](Screenshots/22.png)
+
+
+14. Create a Nat-Gateway and place it in the Public Subnet
+
+```
+aws ec2 create-nat-gateway --subnet-id subnet-0609525a055503ff4 --allocation-id eipalloc-0b51fe4a278417bb0
+```
+
+![Screenshots](Screenshots/23.png)
+
+#### Output
+
+![Screenshots](Screenshots/24.png)
+
+
+15. Tagging Nat-Gateway
+
+```
+aws ec2 create-tags --resources nat-0a5c6e4f8760a16e7 --tags Key=Name,Value=CLI-NAT
+```
+
+![Screenshots](Screenshots/25.png)
+
+#### Output
+
+![Screenshots](Screenshots/26.png)
+
+
+16. Create Route Table 1 for Public Subnet
+
+```
+aws ec2 create-route-table --vpc-id vpc-0186ea191f2032447
+```
+
+![Screenshots](Screenshots/27.png)
+
+
+17. Tagging Public RT
+
+```
+aws ec2 create-tags --resources rtb-0584a3ac1c717b616 --tags Key=Name,Value=CLI-PUBLIC_RT
+```
+
+![Screenshots](Screenshots/28.png)
+
+#### Output
+
+![Screenshots](Screenshots/29.png)
+
+
+18. 
+
+
+
+
+
+
+
 
