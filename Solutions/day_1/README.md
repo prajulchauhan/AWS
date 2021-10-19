@@ -37,6 +37,6 @@ aws ec2 create-tags --resources vpc-0186ea191f2032447 --tags Key=Name,Value=TEST
 
 ![Screenshots](Screenshots/2.png)
 
-### Output 
+#### Output 
 
 ![Screenshots](Screenshots/3.png)
