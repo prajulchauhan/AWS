@@ -17,7 +17,7 @@ PS: Create a Bastion Host in Public Subnet
 
 
 
-###**USING AWS-CLI**
+**USING AWS-CLI**
 
 
 1. Creating VPC
