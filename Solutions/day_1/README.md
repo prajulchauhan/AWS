@@ -15,7 +15,10 @@ PS: Create a Bastion Host in Public Subnet
 
 > Delete all the instances and now make those two instances that you created in previous task using aws-cli.
 
-**USING AWS-CLI**
+
+
+### > **USING AWS-CLI**
+
 
 1. Creating VPC
 
