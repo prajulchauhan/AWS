@@ -40,3 +40,42 @@ aws ec2 create-tags --resources vpc-0186ea191f2032447 --tags Key=Name,Value=TEST
 #### Output 
 
 ![Screenshots](Screenshots/3.png)
+
+
+3. Modifying VPC Attributes for enabling DNS Hostname
+
+```
+aws ec2 modify-vpc-attribute --vpc-id vpc-0186ea191f2032447 --enable-dns-hostname "{\"Value\":true}"
+```
+
+![Screenshots](Screenshots/4.png)
+
+#### Output
+
+![Screenshots](Screenshots/5.png)
+
+
+4. Creating Public Subnet
+
+```
+aws ec2 create-subnet --vpc-id vpc-0186ea191f2032447 --cidr-block 10.0.0.0/27
+```
+
+![Screenshots](Screenshots/6.png)
+
+
+5. Tagging Public Subnet
+
+```
+aws ec2 create-tags --resources subnet-0609525a055503ff4 --tags Key=Name,Value=CLI-Public-Subnet
+```
+
+![Screenshots](Screenshots/7.png)
+
+#### Output
+
+![Screenshots](Screenshots/8.png)
+
+
+6. 
+
