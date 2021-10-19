@@ -77,5 +77,40 @@ aws ec2 create-tags --resources subnet-0609525a055503ff4 --tags Key=Name,Value=C
 ![Screenshots](Screenshots/8.png)
 
 
-6. 
+6. Enable auto-assign Public IP on the Public Subnet
+
+```
+aws ec2 modify-subnet-attribute --subnet-id subnet-0609525a055503ff4 --map-public-ip-on-launch
+```
+
+![Screenshots](Screenshots/9.png)
+
+#### Output
+
+![Screenshots](Screenshots/10.png)
+
+
+7. Creating Private Subnet
+
+```
+aws ec2 create-subnet --vpc-id vpc-0186ea191f2032447 --cidr-block 10.0.0.32/27
+```
+
+![Screenshots](Screenshots/11.png)
+
+
+8. Tagging Private Subnet
+
+```
+aws ec2 create-tags --resources subnet-06aa7f597b99617a3 --tags Key=Name,Value=CLI-Private-Subnet
+```
+
+![Screenshots](Screenshots/12.png)
+
+#### Output
+
+![Screenshots](Screenshots/13.png)
+
+
+9.
 
