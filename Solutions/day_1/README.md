@@ -27,3 +27,16 @@ aws ec2 create-vpc --cidr-block 10.0.0.0/26
 ```
 
 ![Screenshots](Screenshots/1.png)
+
+
+2. Setting Tags for VPC
+
+```
+aws ec2 create-tags --resources vpc-0186ea191f2032447 --tags Key=Name,Value=TEST_VPC_CLI
+```
+
+![Screenshots](Screenshots/2.png)
+
+### Output 
+
+![Screenshots](Screenshots/3.png)
