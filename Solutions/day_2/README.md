@@ -87,10 +87,10 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 > Launch a public load balancer that would forward the requests to these 2 LAMP instances.
 
 
-![Screenshots](Screenshots/25.png)
+![Screenshots](Screenshots/22.png)
 
 
-![Screenshots](Screenshots/26.png)
+![Screenshots](Screenshots/23.png)
 
 
 ![Screenshots](Screenshots/17.png)
