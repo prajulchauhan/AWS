@@ -85,5 +85,16 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 ### Task 3
 
 > Launch a public load balancer that would forward the requests to these 2 LAMP instances.
+
+
+![Screenshots](Screenshots/25.png)
+
+
+![Screenshots](Screenshots/26.png)
+
+
+![Screenshots](Screenshots/17.png)
+
+
 > Server-1 should serve a webpage that would say "Hi! i am server 1"
 > Server-2 should serve a webpage that would say "Hi! i am server 2"
