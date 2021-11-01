@@ -68,14 +68,15 @@
 
 > Create 2 Bastion Hosts (Jump Servers) each in both Public Subnets.
 > Launch 2 Instances in both Private Subnets for your python-based application
-> & install Apache (webserver) in them. You can google Digital Ocean's blog regarding LAMP stack setup.
+> & install Apache (webserver) in them. You can refer to  Digital Ocean's blog regarding LAMP stack setup.
+
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
-[DigitalOcean](https://www.digitalocean.com)
 
-We will configure our apache in Private subnet Instances.
 
-Finally, create one instance each in both Protected subnets, we have installed mysql database in both of them.
+> Configure your apache in Private Subnet Instances.
+>
+> Finally, Launch one instance each in both Protected Subnets & install mysql database in both of them.
 
 
 
