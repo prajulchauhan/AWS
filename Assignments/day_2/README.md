@@ -13,10 +13,10 @@
 
 ### Task 2
 
-> Make LAMP setup with 2 instances in each private subnets.
-> Server-1 should serve a webpage that would say "Hi! i am server 1"
-> Server-2 should serve a webpage that would say "Hi! i am server 2"
+> Make LAMP setup with 2 instances as Webservers in each Private Subnets & Databases in Protected Subnets.
 
 ### Task 3
 
-> Launch a public load balancer that would forward the requests to these 2 LAMP instances
+> Launch a public load balancer that would forward the requests to these 2 LAMP instances.
+> Server-1 should serve a webpage that would say "Hi! i am server 1"
+> Server-2 should serve a webpage that would say "Hi! i am server 2"
