@@ -22,7 +22,16 @@
 
 ![Screenshots](Screenshots/7.png)
 
+
 > Create 1 IGW and 2 NGW in each availability zone and make the appropriate routes in route tables
+
+
+![Screenshots](Screenshots/8.png)
+
+
+![Screenshots](Screenshots/10.png)
+
+
 > Main route will remain intact, instead make 5 route tables
  - public_route_table
  - private_route_table_1
