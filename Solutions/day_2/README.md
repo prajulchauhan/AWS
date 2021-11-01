@@ -64,7 +64,7 @@
 
 > Make LAMP setup with 2 instances in each private subnets.
 
-##For creating LAMP stack, follow the below steps:
+## For creating LAMP stack, follow the below steps:
 
 > Create 2 Bastion Hosts (Jump Servers) each in both Public Subnets.
 > Launch 2 Instances in both Private Subnets for your python-based application
