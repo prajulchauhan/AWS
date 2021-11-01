@@ -21,4 +21,3 @@
 ### Task 3
 
 > Launch a public load balancer that would forward the requests to these 2 LAMP instances
-> create the same setup using aws-cli except vpc.
