@@ -62,7 +62,7 @@
 
 ### Task 2
 
-> Make LAMP setup with 2 instances in each private subnets.
+> Make LAMP setup with 2 instances as Webservers in each Private Subnets & Databases in Protected Subnets.
 
 ## For creating LAMP stack, follow the below steps:
 
