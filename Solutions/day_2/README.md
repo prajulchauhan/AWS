@@ -79,10 +79,11 @@ https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mys
 > Finally, Launch one instance each in both Protected Subnets & install mysql database in both of them.
 
 
+![Screenshots](Screenshots/19.png)
 
-> Server-1 should serve a webpage that would say "Hi! i am server 1"
-> Server-2 should serve a webpage that would say "Hi! i am server 2"
 
 ### Task 3
 
-> Launch a public load balancer that would forward the requests to these 2 LAMP instances
+> Launch a public load balancer that would forward the requests to these 2 LAMP instances.
+> Server-1 should serve a webpage that would say "Hi! i am server 1"
+> Server-2 should serve a webpage that would say "Hi! i am server 2"
