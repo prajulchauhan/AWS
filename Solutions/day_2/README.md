@@ -33,11 +33,32 @@
 
 
 > Main route will remain intact, instead make 5 route tables
+
  - public_route_table
+
  - private_route_table_1
+
  - private_route_table_2 
+
  - protected_route_table_1
+
  - protected_route_table_2
+
+
+![Screenshots](Screenshots/14.png)
+
+
+![Screenshots](Screenshots/11.png)
+
+
+![Screenshots](Screenshots/15.png)
+
+
+![Screenshots](Screenshots/12.png)
+
+
+![Screenshots](Screenshots/16.png)
+
 
 ### Task 2
 
