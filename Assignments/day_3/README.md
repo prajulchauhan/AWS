@@ -1,9 +1,7 @@
 # AWS Assignment Day-3
 
-[![N|Solid](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/AWS_Simple_Icons_AWS_Cloud.svg/100px-AWS_Simple_Icons_AWS_Cloud.svg.png)](https://nodesource.com/products/nsolid)
-
-
 ### Task 1
+
 > Create a linux t2.micro ec2 instance. After logging into this instance move /etc/sudoers file with /etc/sudoers.bkp 
 
 > Now try to login, If can't - resolve this issue
