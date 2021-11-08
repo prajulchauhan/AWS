@@ -1,0 +1,7 @@
+---
+ - name: Executing NGINX Role
+   hosts: all
+   roles:
+    - role: nginx
+      become: yes
+      become_user: root
