@@ -1,7 +1,8 @@
 ---
  - name: Executing NGINX Role
    hosts: localhost
+   become: yes
+   become_user: root
    roles:
-    - role: nginx
-      become: yes
-      become_user: root
+    - keys
+    - nginx

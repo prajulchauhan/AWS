@@ -1,0 +1,11 @@
+---
+- name: Generating ssh keys
+  command : ssh-keygen -q -t rsa -f /home/ubuntu/.ssh -C "" -N ""
+  args:
+      creates: /home/ubuntu/.ssh/
+
+- name: Set authorized key took from file
+  authorized_key:
+    user: ubuntu
+    state: present
+    key: "{{ lookup('file', '/home/ubuntu/.ssh/id_rsa.pub') }}"
