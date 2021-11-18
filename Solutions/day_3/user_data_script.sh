@@ -7,7 +7,7 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install -y ansible
 sudo apt install -y git
 cd /etc/ansible
-sed 'N a <[webservers]/n localhost>' /etc/ansible/hosts
+sudo bash -c 'echo -e "[webservers]\nlocalhost" >> /etc/ansible/hosts'
 touch /home/ubuntu/.ssh/authorized_keys
 sudo chmod 0700 /home/ubuntu/.ssh
 sudo chmod 0645 /home/ubuntu/.ssh/authorized_keys
