@@ -8,10 +8,11 @@ sudo apt install -y ansible
 sudo apt install -y git
 cd /etc/ansible
 sudo bash -c 'echo -e "[webservers]\nlocalhost" >> /etc/ansible/hosts'
+cd /home/ubuntu/.ssh
+ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa <<< y
 touch /home/ubuntu/.ssh/authorized_keys
 sudo chmod 0700 /home/ubuntu/.ssh
 sudo chmod 0645 /home/ubuntu/.ssh/authorized_keys
-ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa <<< y
 sudo cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
 cd /home/ubuntu
 git clone https://github.com/prajulchauhan/AWS.git
