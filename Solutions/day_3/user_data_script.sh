@@ -18,5 +18,5 @@ git clone https://github.com/prajulchauhan/AWS.git
 cd /home/ubuntu/AWS
 git checkout -b develop
 git pull origin develop
-cd Solutions/day_3
+cd /home/ubuntu/AWS/Solutions/day_3/
 ansible-playbook webserver.yml
