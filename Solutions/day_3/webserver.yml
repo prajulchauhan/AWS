@@ -1,6 +1,6 @@
 ---
  - name: Executing NGINX Role
-   hosts: all
+   hosts: localhost
    roles:
     - role: nginx
       become: yes
