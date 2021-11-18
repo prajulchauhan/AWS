@@ -16,6 +16,7 @@ sudo cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
 cd /home/ubuntu
 git clone https://github.com/prajulchauhan/AWS.git
 cd /home/ubuntu/AWS
+sudo chown -R $USER: .
 git checkout -b develop
 git pull origin develop
 cd /home/ubuntu/AWS/Solutions/day_3/
