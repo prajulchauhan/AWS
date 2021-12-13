@@ -43,9 +43,15 @@
 
 
 ``` 
+
 In order to resolve this, we need to follow steps mentioned below: 
 
+
 * Stop the running 'TEST' instance & detach the volume associated with it.
+
+
+![Screenshots](Screenshots/9.png)
+
 
 ```
 
