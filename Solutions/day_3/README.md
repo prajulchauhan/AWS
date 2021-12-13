@@ -42,9 +42,8 @@
 
 
 
-``` In order to resolve this, we need to follow steps mentioned below: ```
-
-```* Stop the running 'TEST' instance & detach the volume associated with it.```
+``` In order to resolve this, we need to follow steps mentioned below: 
+* Stop the running 'TEST' instance & detach the volume associated with it.```
 
 
 ### Task 2
