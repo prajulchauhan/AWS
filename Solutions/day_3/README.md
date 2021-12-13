@@ -134,7 +134,7 @@ In order to resolve this, we need to follow steps mentioned below:
 
 ### Task 2
 
-> Create an ansible role before pushing the same to your public github repository.
+> Create an ansible role before pushing the same to your public github repository. This Role will simply host an nginx webpage.
 
 
 ```
@@ -143,26 +143,31 @@ Ansible role 'nginx' is also uploaded in the repo.
 
 ```
 
-> This Role will simply host an nginx webpage saying
-  - "Hi i am ninja and my name is {yourname}" 
-
-
 > Execute this role in user data script while launching another instance
+
+
+
+![Screenshots](Screenshots/24.png)
+
+
+
+![Screenshots](Screenshots/25.png)
+
+
+
+![Screenshots](Screenshots/26.png)
+
 
 
 > Your website should be up & running after the system boots up
 
 
-> tag this instance as `ninja:yourname`
+
+![Screenshots](Screenshots/27.png)
+
 
 
 
 ### Task 3
+
 > write a jobDsl to start stop this instance through jenkins  
-
-#  NOTE!
-  - Make Documentation
-  - Don't commit and push your AWS Keys on any public repository
-  
-   
-
