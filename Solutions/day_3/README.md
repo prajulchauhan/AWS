@@ -133,16 +133,29 @@ In order to resolve this, we need to follow steps mentioned below:
 
 
 ### Task 2
-> create an ansible role before pushing the same to your public github repository.
+
+> Create an ansible role before pushing the same to your public github repository.
+
+
+```
+
+Ansible role 'nginx' is also uploaded in the repo.
+
+```
 
 > This Role will simply host an nginx webpage saying
   - "Hi i am ninja and my name is {yourname}" 
 
+
 > Execute this role in user data script while launching another instance
+
 
 > Your website should be up & running after the system boots up
 
+
 > tag this instance as `ninja:yourname`
+
+
 
 ### Task 3
 > write a jobDsl to start stop this instance through jenkins  
