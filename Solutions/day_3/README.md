@@ -50,10 +50,87 @@ In order to resolve this, we need to follow steps mentioned below:
 * Stop the running 'TEST' instance & detach the volume associated with it.
 
 
-![Screenshots](Screenshots/9.png)
+* Create a new 'RESCUE' instance & attach the 'TEST' instance's volume to it.
+
+
+* Login to 'RESCUE' instance & mount the 'TEST' volume to any directory. __I mounted it on /tmp__
+
+
+* Navigate through mounted directories & you'll be able to see the sudoers.bkp. Rename it back to sudoers.
+
+
+* Stop the 'RESCUE' instance & detach the 'TEST' volume.
+
+
+* Attach the 'TEST' volume back to 'TEST' instance. 
+
+
+* You can switch to users now. 
 
 
 ```
+
+
+
+![Screenshots](Screenshots/9.png)
+
+
+
+![Screenshots](Screenshots/10.png)
+
+
+
+![Screenshots](Screenshots/11.png)
+
+
+
+![Screenshots](Screenshots/12.png)
+
+
+
+![Screenshots](Screenshots/13.png)
+
+
+
+![Screenshots](Screenshots/14.png)
+
+
+
+![Screenshots](Screenshots/15.png)
+
+
+
+![Screenshots](Screenshots/16.png)
+
+
+
+![Screenshots](Screenshots/17.png)
+
+
+
+![Screenshots](Screenshots/18.png)
+
+
+
+![Screenshots](Screenshots/19.png)
+
+
+
+![Screenshots](Screenshots/20.png)
+
+
+
+![Screenshots](Screenshots/21.png)
+
+
+
+![Screenshots](Screenshots/22.png)
+
+
+
+![Screenshots](Screenshots/23.png)
+
+
 
 ### Task 2
 > create an ansible role before pushing the same to your public github repository.
