@@ -25,17 +25,28 @@
 
 
 
-```Login to "TEST" instance & move /etc/sudoers file & try to switch to root users.```
+
+```Login to "TEST" instance & move /etc/sudoers file & try to switch to root user.```
+
+
+
+> Now try to login, If can't - resolve this issue
+
 
 
 ![Screenshots](Screenshots/7.png)
+
 
 
 ![Screenshots](Screenshots/8.png)
 
 
 
-> Now try to login, If can't - resolve this issue
+```In order to resolve this, we need to the following steps:
+
+* Stop the running 'TEST' instance & detach the volume associated with it.
+
+```
 
 ### Task 2
 > create an ansible role before pushing the same to your public github repository.
