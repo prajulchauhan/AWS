@@ -6,6 +6,33 @@
 > Create a linux t2.micro ec2 instance. After logging into this instance move /etc/sudoers file with /etc/sudoers.bkp 
 
 
+![Screenshots](Screenshots/1.png)
+
+
+![Screenshots](Screenshots/2.png)
+
+
+![Screenshots](Screenshots/3.png)
+
+
+![Screenshots](Screenshots/4.png)
+
+
+![Screenshots](Screenshots/5.png)
+
+
+![Screenshots](Screenshots/6.png)
+
+
+> Login to "TEST" instance & move /etc/sudoers file & try to switch to root users.
+
+
+![Screenshots](Screenshots/7.png)
+
+
+![Screenshots](Screenshots/8.png)
+
+
 
 > Now try to login, If can't - resolve this issue
 
