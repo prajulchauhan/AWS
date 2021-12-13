@@ -42,10 +42,10 @@
 
 
 
-``` In order to resolve this, we need to the following steps: ```
-
+``` In order to resolve this, we need to follow steps mentioned below: ```
+```
 * Stop the running 'TEST' instance & detach the volume associated with it.
-
+```
 
 ### Task 2
 > create an ansible role before pushing the same to your public github repository.
